@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angularjsblog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-grid">
+        <div class="navbar-links">
+            <a [routerLink]="'/home'">Home</a>                
+            <a [routerLink]="'/displayQuestions'">Curious</a>
+            <a [routerLink]="'/register'">Registration</a>
+            <a [routerLink]="'/questions'">Ask a question</a>
+            <a [routerLink]="'/adminTools'">Admin Tmools</a>
+        </div>
+        <div class="navbar-search">
+            <input type="text" placeholder="Search">
+            <button type="submit">🔍</button>
+        </div>
+    </div>
+  </div>
+  <app-root></app-root>
+</body>
+</html>
