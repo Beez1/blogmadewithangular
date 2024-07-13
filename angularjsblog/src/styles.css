@@ -110,7 +110,5 @@
 }
 
 body{
-    background-image: url('./app/images/cat-han-W_5Eakb1598-unsplash.jpg');
-    background-size: cover; /* Optional: Makes the image cover the entire background */
-    background-repeat: no-repeat; 
-  }
+    background-image: url('https://imageworksllc.com/wp-content/uploads/2019/01/Depositphotos_26569863_m-2015.jpg');
+}

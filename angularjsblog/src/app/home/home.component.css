@@ -1,0 +1,188 @@
+.recently-askedq {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .recently-askedq h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #ffffff;
+    border-bottom: 2px solid #615e5e;
+  }
+  
+  .recently-askedq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .recently-askedq-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #444;
+  }
+  
+  .recently-askedq-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .recently-askedq-card p {
+    font-size: 1.2em;
+    color: #d3d3d3;
+    transition: color 0.3s ease;
+  }
+  
+  .recently-askedq-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    background-color: #292929;
+    border-color: #ffffff;
+  }
+  
+  .recently-askedq-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .recently-askedq-card:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  /* Keyframe animation for hover effects */
+  @keyframes borderExpand {
+    from {
+      border-color: #444;
+    }
+    to {
+      border-color: #ffffff;
+    }
+  }
+  
+  .recently-askedq-card:hover {
+    animation: borderExpand 0.3s forwards;
+  }
+  
+  .welcome-message {
+    border: 5px solid #615e5e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.freepik.com/free-vector/abstract-background-with-modern-halftone-dots-design_1048-13747.jpg?t=st=1720831169~exp=1720834769~hmac=07a709d52f0db46aa17f5556b8603aa67719bcfbebcca1a61f90eefcb27b7698&w=740');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .welcome-message h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .button-welcome {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .button-welcome::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.2s ease, left 0.2s ease, right 0.2s ease;
+  }
+  
+  .button-welcome:hover {
+    color: #777;
+  }
+  
+  .button-welcome:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Style for the container */
+  .diy-container {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+  
+  /* Style for each question */
+  .diy-question {
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for question text */
+  .question {
+    cursor: pointer;
+    color: white;
+    margin: 0;
+  }
+  
+  /* Style for the answer */
+  .answer p {
+    margin-top: 5px;
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .diy-container-h1 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #615e5e;
+    padding-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+  .diy-container-h1:hover {
+    opacity: 0.05;
+    transform: translateY(-10px);
+  }
+  
