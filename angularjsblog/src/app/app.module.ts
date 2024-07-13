@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common'; // Import CommonModule
 import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule if needed
  // Adjust path as per your project structure
-import { DisplayquestionsComponent } from './displayquestions/displayquestions.component';
-
+import { RouterModule } from '@angular/router';
 @NgModule({
     declarations: [
         
@@ -13,7 +12,8 @@ import { DisplayquestionsComponent } from './displayquestions/displayquestions.c
         BrowserModule,
         CommonModule,
         HttpClientModule,
-        DisplayquestionsComponent // Import DisplayquestionsComponent instead of declaring it
+        RouterModule
+       // Import DisplayquestionsComponent instead of declaring it
         // Other modules as needed
     ],
     providers: [],
