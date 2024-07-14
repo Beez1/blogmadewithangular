@@ -1,0 +1,82 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dq-answers {
+  color: #fff; /* White text */
+  border: 2px solid #615e5e; /* Gray border */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #1c1c1c; /* Dark background */
+  max-width: 800px; /* Adjust the maximum width */
+  margin: 20px auto; /* Center the div horizontally and add vertical spacing */
+  box-sizing: border-box; /* Include padding and border in the width */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.question-container {
+  border: 2px solid #333; /* Dark border */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #222; /* Dark background */
+  max-width: 800px; /* Adjust the maximum width */
+  margin: 20px auto; /* Center the div horizontally and add vertical spacing */
+  box-sizing: border-box; /* Include padding and border in the width */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.question {
+  padding: 20px 0; /* Spacing between questions */
+  border-bottom: 2px solid #444; /* Dark gray border for a sleek look */
+}
+
+.question:last-child {
+  border-bottom: none; /* Remove border for the last question */
+}
+
+.question-title {
+  margin: 0 0 10px; /* Spacing below the title */
+  font-size: 1.5em; /* Adjust the title size */
+  color: #fff; /* White text */
+  font-weight: bold; /* Make the title bold */
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.question-text {
+  margin: 0; /* Reset margin for the text */
+  font-size: 1em; /* Adjust the text size */
+  color: #ccc; /* Light gray text */
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+.dq-answers h1 {
+  margin: 0 0 20px; /* Add spacing below the h1 */
+  font-size: 2em; /* Adjust the size */
+  color: #fff; /* White text */
+  text-align: center; /* Center the h1 text */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.h2-lf {
+  color: #fff; /* White text */
+  margin-bottom: 10px; /* Add spacing below h2 */
+  text-align: center; /* Center the h2 text */
+  animation: fadeIn 1.2s ease-in-out;
+}
