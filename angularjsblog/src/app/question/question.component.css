@@ -106,21 +106,11 @@ body {
   display: block; /* Make the button a block element to center it */
   font-size: 16px;
   letter-spacing: 1px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  animation: buttonAnimation 1s infinite alternate;
 }
 
-@keyframes buttonAnimation {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.05);
-  }
-}
 
 .submit-btn:hover {
   background-color: #ccc;
   color: #333;
-  animation: none; /* Stop the animation on hover */
+
 }

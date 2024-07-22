@@ -1,26 +1,26 @@
 const mongoose = require('mongoose');
 
-// Define Meme Schema
+// Define Schema
 const modelSchema = new mongoose.Schema({
-  useername: {
-    type: String, // Store image data as buffer
+  username: {
+    type: String,
     required: true
   },
   title: {
-    type: String, // Array of tags
+    type: String,
     required: true
   },
   question: {
-    type: String, // MIME type of the image
+    type: String,
     required: true
   },
   category: {
-    type: String, // MIME type of the image
+    type: String,
     required: true
   }
 }, {timestamps: true});
 
-// Create Meme model
+// Create Model
 const Model = mongoose.model('Model', modelSchema);
 
 module.exports = Model;
