@@ -48,6 +48,18 @@ app.post('/question', async (req, res) => {
   }
 });
 
+// Endpoint to get all questions
+app.get('/model', async (req, res) => {
+  try {
+    const questions = await Model.find();
+    res.status(200).json({ questions });
+  } catch (error) {
+    console.error('Error getting questions:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+
 // Start server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

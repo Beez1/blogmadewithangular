@@ -1,32 +1,17 @@
 <app-header></app-header>
 <div class="dq-answers">
-    <h1>Dear Curious Cat, here are questions, that have been answered previously.</h1>
-  </div>
-  
-  <div class="question-container">
-    <div class="question">
-        <h2 class="question-title">How can I repaint old furniture?</h2>
-        <p class="question-text">To repaint old furniture, start by cleaning the surface thoroughly and sanding it to create a smooth base. Then, apply a primer to help the new paint adhere better. Once the primer is dry, apply your desired paint color using a brush or roller. Allow the paint to dry completely between coats, and finish with a protective sealant if desired.</p>
+    <h1>Dear Curious Cat, here are questions that have been answered previously.</h1>
+</div>
+<div id="question-container" class="grid-container">
+    <div *ngFor="let item of model" class="card">
+        <div class="card-header">
+            <div class="model-title">Title: {{ item.title }}</div>
+            <div class="model-question">Question: {{ item.question }}</div>
+        </div>
+        <div class="card-footer">
+            <div class="model-username">Username: {{ item.username }}</div>
+            <div class="model-createdAt">Created At: {{ item.createdAt | date:'short' }}</div>
+            <div class="model-updatedAt">Updated At: {{ item.updatedAt | date:'short' }}</div>
+        </div>
     </div>
-    <div class="question">
-        <h2 class="question-title">What tools do I need to install laminate flooring?</h2>
-        <p class="question-text">To install laminate flooring, you will need a few basic tools including a tape measure, a saw (circular saw or handsaw), a tapping block, a pull bar, spacers, and a rubber mallet. Additionally, you may need a jigsaw or miter saw for cutting the planks to fit around obstacles.</p>
-    </div>
-    <div class="question">
-        <h2 class="question-title">How can I create a gallery wall?</h2>
-        <p class="question-text">To create a gallery wall, start by gathering your frames and artwork. Lay out the frames on the floor to plan your arrangement before hanging them on the wall. Use a level and measuring tape to ensure the frames are evenly spaced and aligned. Consider mixing frame sizes and styles for visual interest.</p>
-    </div>
-    <div class="question">
-        <h2 class="question-title">What are some easy woodworking projects for beginners?</h2>
-        <p class="question-text">Some easy woodworking projects for beginners include building a simple shelf, a wooden planter box, a birdhouse, or a basic bench. These projects typically require basic tools like a saw, drill, hammer, and sandpaper, and can be completed in a weekend.</p>
-    </div>
-    <div class="question">
-        <h2 class="question-title">How can I make my own candles?</h2>
-        <p class="question-text">To make your own candles, you will need wax, wicks, fragrance oils (if desired), and containers for the candles. Melt the wax in a double boiler, add fragrance oil if desired, and pour the melted wax into the containers. Insert the wicks and allow the candles to cool and harden before trimming the wicks.</p>
-    </div>
-    <div class="question">
-        <h2 class="question-title">What are some tips for upcycling old clothing?</h2>
-        <p class="question-text">When upcycling old clothing, consider cutting fabric into smaller pieces to create patches, quilts, or tote bags. You can also use fabric dye to change the color of clothing or add embellishments like embroidery or appliqué to give them a new look.</p>
-    </div>
-  </div>
-  
+</div>
