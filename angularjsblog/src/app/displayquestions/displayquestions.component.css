@@ -40,24 +40,24 @@
   background-color: #2a2a2a; /* Dark card background */
   border: 1px solid #444; /* Slightly lighter border */
   border-radius: 8px; /* Rounded corners */
-  padding: 15px; /* Padding inside cards */
+  padding: 20px; /* Padding inside cards */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
   display: flex;
   flex-direction: column;
-  height: 300px; /* Fixed height for rectangular shape */
+  height: auto; /* Allow height to adjust based on content */
   overflow: hidden; /* Hide overflow text */
   position: relative; /* Allows absolute positioning of child elements */
 }
 
 .card-header {
-  margin-bottom: auto; /* Push footer to the bottom */
+  margin-bottom: 20px; /* Space below the header */
 }
 
 .card-footer {
   position: absolute;
-  bottom: 15px; /* Align at the bottom of the card */
-  right: 15px; /* Align to the right of the card */
+  bottom: 20px; /* Align at the bottom of the card */
+  right: 20px; /* Align to the right of the card */
   text-align: right; /* Right-align the text */
   font-size: 0.9em; /* Slightly smaller font size for footer */
 }
@@ -72,8 +72,8 @@
 .model-question {
   font-style: italic; /* Italicize question */
   color: #ddd; /* Light gray for readability */
-  margin-bottom: 10px; /* Space below question */
-  line-height: 1.4; /* Increase line height for better readability */
+  margin-bottom: 20px; /* Space below question */
+  line-height: 1.5; /* Increase line height for better readability */
   font-size: 1em; /* Set a readable font size */
 }
 

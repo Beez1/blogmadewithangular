@@ -9,9 +9,8 @@
             <div class="model-question">Question: {{ item.question }}</div>
         </div>
         <div class="card-footer">
-            <div class="model-username">Username: {{ item.username }}</div>
-            <div class="model-createdAt">Created At: {{ item.createdAt | date:'short' }}</div>
-            <div class="model-updatedAt">Updated At: {{ item.updatedAt | date:'short' }}</div>
+            <div class="model-username">User: {{ item.username }}</div>
+            <div class="model-createdAt">{{ item.createdAt | date:'short' }}</div>
         </div>
     </div>
 </div>
